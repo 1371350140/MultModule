@@ -9,7 +9,14 @@
         <activity
             android:name=".LogActivity"
             android:label="日志模块"
-            android:theme="@style/OneTheme"/>
+            android:theme="@style/OneTheme">
+
+            <intent-filter>
+                <action android:name="cloud.libone.LogActivity"/>
+
+            </intent-filter>
+
+        </activity>
 
         <activity
             android:name=".LogDetailActivity"

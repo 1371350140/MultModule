@@ -25,4 +25,11 @@
         android:gravity="center_vertical"
         android:text="日志模块"/>
 
+    <TextView
+        android:id="@+id/tv_main_two_module"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        android:text="模块2"/>
+
 </LinearLayout>

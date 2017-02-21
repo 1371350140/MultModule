@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 
 import cloud.base.BaseActivity;
 import cloud.base.BaseMainActivity;
+import cloud.libone.LogActivity;
 import cloud.libtwo.TwoMainActivity;
 
 public class MainActivity extends BaseActivity {
@@ -30,9 +31,14 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.tv_base_main_log).setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View view) {
                 Log.d("MainActivity", new Gson().toJson("d"));
-                startActivity(TwoMainActivity.createIntent(MainActivity.this));
+                startActivity(LogActivity.createIntent(MainActivity.this));
             }
         });
 
+        findViewById(R.id.tv_main_two_module).setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                startActivity(TwoMainActivity.createIntent(MainActivity.this));
+            }
+        });
     }
 }

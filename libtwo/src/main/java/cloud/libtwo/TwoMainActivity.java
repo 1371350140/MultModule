@@ -2,6 +2,7 @@ package cloud.libtwo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
 
 import cloud.base.BaseActivity;
 
@@ -19,5 +20,16 @@ public class TwoMainActivity extends BaseActivity {
 
     @Override protected int layout() {
         return R.layout.two_activity;
+    }
+
+    @Override protected void init() {
+        super.init();
+
+        findViewById(R.id.tv_lib_one).setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+//                startActivity(new Intent("cloud.libone.LogActivity"));
+            }
+        });
+
     }
 }
