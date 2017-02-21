@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="OneTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/onePrimaryColor</item>
+        <item name="colorAccent">@color/onePrimaryColor</item>
+        <item name="colorPrimaryDark">@color/onePrimaryColor</item>
+
+    </style>
+
+
+</resources>
